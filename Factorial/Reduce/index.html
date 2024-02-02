@@ -13,6 +13,18 @@
       };
       let result = number.reduce(factorial);
       console.log(`Factorial of ${number.length} is : `, result);
+
+      // different approch
+      let a = 7;
+      const Factorial = (num) => {
+        let arr = Array.from(Array(num + 1).keys());
+        console.log(arr.slice(1));
+        let fact = arr.slice(1).reduce((a, b) => {
+          return a * b;
+        });
+        console.log(`Factorial of ${a} is : `, fact);
+      };
+      Factorial(a);
     </script>
   </body>
 </html>

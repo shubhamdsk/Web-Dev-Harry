@@ -14,6 +14,18 @@
         Factorial = number[index] * Factorial;
       }
       console.log(`Factorial of ${number.length} is :`, Factorial);
+
+      // Different Approch
+      const facFor = (num) => {
+        let fac = 1;
+        for (let index = 1; index <= num; index++) {
+          fac = fac * index;
+        }
+        return fac;
+      };
+      let num = 6;
+      let result = facFor(num);
+      console.log(`Factorial of ${num} : ${result}`);
     </script>
   </body>
 </html>

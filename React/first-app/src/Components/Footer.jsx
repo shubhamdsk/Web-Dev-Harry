@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        copyright shubhamdsk.com | All Right Reserved
+        Copyright &copy; www.Shubhamdsk.com | All Right Reserved
       </div>
     </>
   );

@@ -1,0 +1,11 @@
+div.footer {
+  text-align: center;
+  background-color: #070202;
+  color: #fffcfc;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  
+}

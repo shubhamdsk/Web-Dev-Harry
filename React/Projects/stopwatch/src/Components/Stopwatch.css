@@ -1,0 +1,14 @@
+.stopwatch-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.stopwatch-heading {
+  margin-bottom: 10px;
+}
+
+.stopwatch-button {
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+}

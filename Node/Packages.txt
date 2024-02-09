@@ -1,0 +1,8 @@
+npm init -y
+
+ npm i express jsonwebtoken dotenv 
+
+npm i --global nodemon
+
+//Run code - no need to restart the server again & again
+nodemon file-name.js

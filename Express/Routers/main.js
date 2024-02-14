@@ -1,16 +1,21 @@
 import express from "express";
 const app = express();
-const PORT = process.env.PORT || 3000;
+const host = "127.0.0.1";
+const port = 3000;
+
+// Serve static files from the "public" directory
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("Hello Express World !");
+  console.log("Get Request");
+  res.send("Hello World!");
 });
-const start = async () => {};
-try {
-  app.listen(PORT, () => {
-    console.log(`${PORT} Yes i'm connected`);
-  });
-} catch (error) {
-  console.log(error);
-}
-start();
+
+app.post("/", (req, res) => {
+  console.log("Post request");
+  res.send("Hello World Post");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running at http://${host}:${port}/`);
+});
